@@ -2,6 +2,8 @@
 
 This is a simple Laravel app for a blog website to demonstrate key features of this web framework
 
+Companion slides:
+
 It is recommended that you run this example on the CS50 Appliance
 
 ### Setup
@@ -9,6 +11,7 @@ It is recommended that you run this example on the CS50 Appliance
 1. Install composer (for dependency management)
 
 `curl -sS https://getcomposer.org/installer | php`
+
 `sudo mv composer.phar /usr/local/bin/composer`
 
 2. Download the repository.
