@@ -1,5 +1,6 @@
+/* General style tweaks */
 body {
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
 @media (min-width: 768px) {
@@ -20,6 +21,15 @@ h1 a:hover {
   text-decoration: none;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
+section .title {
+  margin-bottom: 20px;
+}
+
+/* Post specific styling */
 article, .comment {
   margin-bottom: 50px;
 }
@@ -28,8 +38,12 @@ article header {
   padding-bottom: 10px;
 }
 
+article header h1 {
+  font-size: 26px;
+}
+
 article footer {
-  padding: 10px 0;
+  padding-top: 20px;
 }
 
 article .content {
