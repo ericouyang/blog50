@@ -2,7 +2,7 @@
 
 This is a simple Laravel app for a blog website to demonstrate key features of this web framework
 
-Companion slides:
+Companion slides: https://www.dropbox.com/s/nmi8sryhnl8voqo/eouyang_cs50_laravel-seminar_slides.pdf?dl=0
 
 It is recommended that you run this example on the CS50 Appliance
 
