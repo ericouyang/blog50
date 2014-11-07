@@ -5,7 +5,7 @@ class Post extends Eloquent {
   // one-to-many relationship with the Comment model
   public function comments()
   {
-      return $this->hasMany('Comment');
+    return $this->hasMany('Comment');
   }
 
   // helper function to get the URL of a post

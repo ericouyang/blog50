@@ -14,14 +14,14 @@ class CreateCommentsTable extends Migration {
   {
     Schema::create('comments', function($table)
     {
-        $table->increments('id');
-        $table->string('name');
-        $table->text('content');
-        $table->integer('post_id')->unsigned();
-        $table->foreign('post_id')
-              ->references('id')->on('posts')
-              ->onDelete('cascade');
-        $table->timestamps();
+      $table->increments('id');
+      $table->string('name');
+      $table->text('content');
+      $table->integer('post_id')->unsigned();
+      $table->foreign('post_id')
+            ->references('id')->on('posts')
+            ->onDelete('cascade');
+      $table->timestamps();
     });
   }
 
