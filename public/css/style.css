@@ -1,0 +1,41 @@
+body {
+  padding: 50px 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+.container > header {
+  margin-bottom: 50px;
+}
+
+h1 a, h1 a:hover {
+  color: #333;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+article, .comment {
+  margin-bottom: 50px;
+}
+
+article header {
+  padding-bottom: 10px;
+}
+
+article footer {
+  padding: 10px 0;
+}
+
+article .content {
+  line-height: 2;
+}
+
+.comment blockquote {
+  font-size: 14px;
+}
