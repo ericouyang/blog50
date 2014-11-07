@@ -13,7 +13,8 @@
       {{ str_limit($post->content, 430) }}
     @endif
   </div>
-  <footer>
-    <p class="text-muted">Posted {{ $post->created_at->diffForHumans() }}</p>
+  <footer class="text-muted">
+    <p>Posted {{ $post->created_at->diffForHumans() }}</p>
+    <p><a href="{{ $post->getURL(); }}#comments">{{ $post->getNumCommentsStr() }}</a></p>
   </footer>
 </article>

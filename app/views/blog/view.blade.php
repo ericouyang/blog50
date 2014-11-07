@@ -3,16 +3,22 @@
 
   <hr />
 
-  <section>
-    <h3 class="page-title">Comments</h3>
-    @foreach ($post->comments as $comment)
-      <div class="comment">
-        <p><strong>{{ $comment->name }} says...</strong></p>
-        <blockquote>{{ $comment->content }}</blockquote>
-      </div>
-    @endforeach
+  <section id="comments">
+    <h3 class="title">Comments</h3>
+    @if (count($post->comments) === 0)
+      <p>No comments yet on this post.</p>
+    @else
+      @foreach ($post->comments as $comment)
+        <div class="comment">
+          <p><strong>{{ $comment->name }} says...</strong></p>
+          <blockquote>{{ $comment->content }}</blockquote>
+        </div>
+      @endforeach
+    @endif
+  </section>
 
-    <p class="lead">Add a comment</p>
+  <section>
+    <h3 class="title">Add a comment</h3>
     <form action="{{ URL::route('createComment', array('id' => $post->id)) }}" method="post">
       <div class="form-group">
         <input name="name" class="form-control" type="text" placeholder="Your name" />
